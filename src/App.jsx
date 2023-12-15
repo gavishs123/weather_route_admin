@@ -1,0 +1,31 @@
+import { BrowserRouter } from "react-router-dom";
+import Router from "./router";
+import { ToastContainer } from 'react-toastify';
+
+
+function App() {
+
+  return (
+    <>
+      <BrowserRouter>
+        <Router />
+      </BrowserRouter>
+
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+      <ToastContainer />
+    </>
+  )
+}
+
+export default App

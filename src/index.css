@@ -1,0 +1,31 @@
+/* src/styles/tailwind.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles using theme variables */
+body {
+  font-family: theme('fontFamily.body');
+  background-color: theme('colors.gray.100');
+}
+
+#root{
+  min-height: 100vh;
+}
+.demo{
+  min-height: calc(100vh - 200px);
+}
+
+.mapboxgl-popup-close-button{
+  right: 5px !important;  
+  top: 8px !important;
+  font-size: 20px;
+  display: none;
+}
+
+.react-calendar__tile--now:enabled:hover, .react-calendar__tile--now:enabled:focus,.react-calendar__tile--now{
+  background-color: #e6e6e6 !important;
+}
+.react-calendar__tile--active{
+   background-color: #38393a !important;
+}
